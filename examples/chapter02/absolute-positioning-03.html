@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Absolute Positioning Example 03</title>
+    <style type="text/css">
+      #green {
+        background-color: #0F0;
+        display: block;
+        height: 300px;
+        position: relative;
+        width: 300px;
+      }
+      #blue {
+        background-color: #1200FF;
+        display: block;
+        height: 100px;
+        width: 100px;
+      }
+      #red {
+        background-color: #F00;
+        display: block;
+        height: 50px;
+        right: 10px;
+        position: absolute;
+        top: 10px;
+        width: 50px;
+      }
+      p {
+        font-size: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="green">
+      <div id="blue">
+        <p>
+          Notice how the red box is pulled out of the natural flow and is now
+          positioned relative to the green box?
+        </p>
+        <div id="red"></div>
+      </div>
+    </div>
+  </body>
+</html>

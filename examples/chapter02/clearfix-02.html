@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Clearfix Example 02</title>
+    <style type="text/css">
+      #red {
+        border: 4px solid #FF0000;
+        display: block;
+      }
+
+      #blue {
+        background: #1200FF;
+        float: left;
+        height: 100px;
+        width: 100%;
+      }
+
+      .clearfix:before,
+      .clearfix:after {
+        content: " ";
+        display: table;
+      }
+      .clearfix:after {
+        clear: both;
+      }
+
+    </style>
+  </head>
+  <body>
+      <span id="red" class="clearfix">
+        <span id="blue"></span>
+      </span>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Fixed Positioning Example 01</title>
+    <style type="text/css">
+      #blue {
+        background-color: #1200FF;
+        display: block;
+        height: 200px;
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+
+      #red,
+      #green,
+      #white {
+        display: block;
+        height: 1000px;
+        width: 100%;
+      }
+
+      #red {
+        background-color: #F00;
+      }
+      #green {
+        background-color: #0F0;
+      }
+      #white {
+        background-color: #FFF;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="blue">
+      <p>
+        This element is fixed to the top left of the viewport.
+        Scrolling does not affect its position
+      </p>
+    </div>
+    <div id="red"></div>
+    <div id="white"></div>
+    <div id="green"></div>
+  </body>
+</html>

@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Products</title>
+    <style type="text/css">
+      .image {
+        height: auto;
+        max-width: 100%;
+      }
+
+      .title {
+        color: #333333;
+        font-family: Georgia, sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+      }
+
+      .action,
+      .summary {
+        display: inline-block;
+        font-family: Helvetica, sans-serif;
+        font-size: 12px;
+        text-decoration: none;
+      }
+
+      .action {
+        color: #0ABDB2;
+      }
+
+      .action:hover {
+        text-decoration: underline;
+      }
+
+      /* product-cell styles */
+
+      .product-cell {
+        width: 200px;
+      }
+
+      .product-cell .title {
+        clear: both;
+        display: block;
+        text-align: center;
+      }
+
+      .product-cell .action {
+        float: right;
+        font-size: 10px;
+      }
+
+      .product-cell .summary {
+        text-align: center;
+      }
+
+      .product-cell .price {
+        float: left;
+        font-family: Helvetica, sans-serif;
+        font-size: 10px;
+      }
+
+      /* product-row styles */
+
+      .product-row {
+        border-bottom: 1px solid #F0F0F0;
+        border-top: 1px solid #F0F0F0;
+        width: 100%;
+      }
+
+      .product-row .image,
+      .product-row .price,
+      .product-row .action {
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+        width: 25%;
+      }
+
+      .product-row .summary {
+        display: none;
+      }
+
+      /* container styles */
+      .example-container {
+        display: block;
+        margin-bottom: 20px;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="example-container">
+      <div class="product-cell">
+        <img src="http://placekitten.com/200/138"
+             alt="Image of a Friendly Kitten" class="image"/>
+        <span class="price">$200.00</span>
+        <a href="#" class="action">Add to Cart</a>
+        <span class="title">A Friendly Kitten</span>
+        <span class="summary">
+          This friendly kitten won't harm you but he might steal your wallet!
+        </span>
+      </div>
+    </div>
+
+    <div class="example-container">
+      <div class="product-row">
+        <img src="http://placekitten.com/200/138"
+             alt="Image of a Friendly Kitten" class="image"/>
+        <span class="price">$200.00</span>
+        <a href="#" class="action">Add to Cart</a>
+        <span class="title">A Friendly Kitten</span>
+        <span class="summary">
+          This friendly kitten won't harm you but he might steal your wallet!
+        </span>
+      </div>
+    </div>
+  </body>
+</html>
